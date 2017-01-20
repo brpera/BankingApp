@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.samplebankapp.my.bankingapp.AdminCheckBalance"
+    android:background="#1A2930">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CHECK BALANCE"
+        android:id="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="30dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="*Account Number:"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAminCheckBalAccno"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="50dp"
+        android:capitalize="characters"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current Balance:"
+        android:id="@+id/lblCurBal"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtAminCheckBalAccno"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PHP 0.00"
+        android:id="@+id/txtCurBal"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/lblCurBal"
+        android:layout_alignEnd="@+id/txtAminCheckBalAccno"
+        android:gravity="right"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK BALANCE"
+        android:id="@+id/btnCheckBal"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:textStyle="bold"
+        android:layout_below="@+id/lblCurBal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="95dp"
+        android:layout_alignParentStart="true"
+        android:onClick="adminCheckBal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/btnCheckBalCancel"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnCheckBal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="cancelCheckBal" />
+
+</RelativeLayout>

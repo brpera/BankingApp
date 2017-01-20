@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.samplebankapp.my.bankingapp.Home"
+    android:background="#1A2930">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEPOSIT"
+        android:id="@+id/btnAdminDepDeposit"
+        android:layout_marginTop="149dp"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:onClick="showDeposit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WITHDRAW"
+        android:id="@+id/btnWithdraw"
+        android:layout_below="@+id/btnAdminDepDeposit"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnAdminDepDeposit"
+        android:textStyle="bold"
+        android:onClick="showWithdraw" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MONEY TRANSFER"
+        android:id="@+id/btnMoneyTrans"
+        android:layout_below="@+id/btnWithdraw"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:onClick="showMoneyTrans" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT INFORMATION"
+        android:id="@+id/btnAcctInfo"
+        android:layout_below="@+id/btnCheckBal"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnCheckBal"
+        android:textStyle="bold"
+        android:onClick="showAccountInfo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:id="@+id/btnLogout"
+        android:layout_below="@+id/btnAcctInfo"
+        android:layout_alignStart="@+id/btnAcctInfo"
+        android:layout_alignEnd="@+id/btnAcctInfo"
+        android:onClick="logoutHome"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK BALANCE"
+        android:id="@+id/btnCheckBal"
+        android:layout_below="@+id/btnMoneyTrans"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0A1612"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnMoneyTrans"
+        android:textStyle="bold"
+        android:onClick="checkBalance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="WELCOME,! "
+        android:id="@+id/textView13"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="30dp"
+        android:textColor="#ffffff" />
+</RelativeLayout>

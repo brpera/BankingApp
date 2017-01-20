@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.samplebankapp.my.bankingapp.AdminWithdraw"
+    android:background="#1A2930">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="WITHDRAW"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="*Account Number:"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="104dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAdminMTAccno"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:capitalize="characters"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Amount:"
+        android:id="@+id/textView26"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtAdminMTAccno"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtAdminWithAmount"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="0.00"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WITHDRAW"
+        android:id="@+id/btnAdminWithdraw"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="86dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#0A1612"
+        android:textStyle="bold"
+        android:backgroundTint="#ffffff"
+        android:onClick="adminWithdraw" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/btnAdminWithCancel"
+        android:layout_marginBottom="36dp"
+        android:textColor="#0A1612"
+        android:textStyle="bold"
+        android:backgroundTint="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="backToTransFromWithdraw" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Remaining Balance:"
+        android:id="@+id/lblCurrentBal"
+        android:textColor="#ff6961"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtAdminWithAmount"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PHP 0.00"
+        android:id="@+id/txtCurrentAdminBal"
+        android:layout_alignTop="@+id/lblCurrentBal"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="#ff6961"
+        android:gravity="right"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

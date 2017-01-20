@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samplebankapp.my.bankingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".Home"
+            android:noHistory="true" />
+        <activity
+            android:name=".HomeAdmin"
+            android:noHistory="true" />
+        <activity
+            android:name=".Maintenance"
+            android:noHistory="true" />
+        <activity
+            android:name=".Transactions"
+            android:noHistory="true" />
+        <activity
+            android:name=".Deposit"
+            android:noHistory="true" />
+        <activity
+            android:name=".Withdraw"
+            android:noHistory="true" />
+        <activity
+            android:name=".AccountInfoActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".EditAccountInfo"
+            android:noHistory="true" />
+        <activity
+            android:name=".MoneyTransfer"
+            android:noHistory="true" />
+        <activity
+            android:name=".TransactionLogsActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".AdminDeposit"
+            android:noHistory="true" />
+        <activity
+            android:name=".AdminWithdraw"
+            android:noHistory="true" />
+        <activity
+            android:name=".AdminMoneyTransfer"
+            android:noHistory="true" />
+        <activity
+            android:name=".AdminCheckBalance"
+            android:noHistory="true" />
+        <activity
+            android:name=".AddCustomer"
+            android:noHistory="true" />
+        <activity
+            android:name=".EditCustomer"
+            android:noHistory="true" />
+        <activity
+            android:name=".AdminFindUserToEdit"
+            android:noHistory="true" />
+        <activity
+            android:name=".AdminCustomerList"
+            android:noHistory="true" />
+        <activity
+            android:name=".CustomerDetails"
+            android:noHistory="true" />
+        <activity
+            android:name=".DeleteActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".DeleteDetails"
+            android:noHistory="true" />
+        <activity
+            android:name=".ChangeInitDeposit"
+            android:noHistory="true" />
+    </application>
+
+</manifest>
